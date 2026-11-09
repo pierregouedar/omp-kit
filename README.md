@@ -74,3 +74,7 @@ To roll back: copy the files back from the backup folder.
   `omp config set modelRoles.advisor <provider/model>` and `omp config set advisor.enabled true`.
   It costs tokens on every turn.
 - **rtk**: install it and its omp integration (see its README) to save tokens on command output.
+
+## License
+
+MIT, see [LICENSE](LICENSE). `themes/titanium-calme.json` is based on the built-in "titanium" theme of [Oh My Pi](https://github.com/can1357/oh-my-pi) (MIT).
