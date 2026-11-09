@@ -1,0 +1,34 @@
+{
+  "defaultThinkingLevel": "medium",
+  "providers.cacheRetention": "long",
+  "compaction.idleEnabled": true,
+  "compaction.thresholdTokens": 300000,
+  "memory.backend": "local",
+  "task.maxConcurrency": 4,
+  "secrets.enabled": true,
+  "lsp.diagnosticsOnEdit": true,
+  "edit.autoRepair.enabled": true,
+  "startup.quiet": true,
+  "display.showTurnTime": true,
+  "symbolPreset": "nerd",
+  "composer.shape": "band",
+  "theme.dark": "titanium-calme",
+  "theme.light": "light",
+  "statusLine.preset": "custom",
+  "statusLine.separator": "slash",
+  "statusLine.transparent": true,
+  "statusLine.contextLine": "percentage",
+  "statusLine.showHookStatus": false,
+  "statusLine.leftSegments": ["model", "mode", "path", "git", "subagents"],
+  "statusLine.rightSegments": ["usage", "cache_hit", "context_pct"],
+  "statusLine.segmentOptions": {
+    "path": { "abbreviate": true, "maxLength": 30 },
+    "git": { "showBranch": true, "showStaged": true, "showUnstaged": true, "showUntracked": false }
+  },
+  "bash.patterns": [
+    { "match": "git push*", "approval": "prompt" },
+    { "match": "git reset --hard*", "approval": "prompt" },
+    { "match": "git clean*", "approval": "prompt" },
+    { "match": "rm -rf*", "approval": "prompt" }
+  ]
+}
